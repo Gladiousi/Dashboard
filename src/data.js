@@ -1,4 +1,12 @@
 export const citizensData = [
-    { id: 1, name: 'Иван Иванов', birthDate: '1985-05-23', status: 'Активен' },
-    { id: 2, name: 'Ольга Петрова', birthDate: '1990-10-15', status: 'Неактивен' },
-  ];
+  { id: 1, name: 'Миронов Викторин Абрамович', birthDate: '1951-10-07', age: 73, medicalRecord: '7577-8900-2818-2044', series: '9013', number: '500187', telephonNumber: '8 (235) 677-11-29', snils: '335 489 8728 62', city: 'Москва' },
+  { id: 2, name: 'Доронин Харлампий Дмитриевич', birthDate: '1975-07-29', age: 49, medicalRecord: '6665-6696-7571-2586', series: '4424', number: '669649', telephonNumber: '8 (263) 813-1598', snils: '355 492 2230 85', city: 'Санкт-Петербург' },
+  { id: 3, name: 'Авдеев Сократ Аксёнович', birthDate: '1950-04-04', age: 74, medicalRecord: '1542-9671-1030-7493', series: '4763', number: '746392', telephonNumber: '8 (202) 887-8679', snils: '934 164 4589 98', city: 'Новосибирск' },
+  { id: 4, name: 'Субботина Людмила Руслановна', birthDate: '1999-11-21', age: 24, medicalRecord: '5017-9874-7415-2165', series: '4659', number: '344410', telephonNumber: '8 (337) 447-4415', snils: '103 825 8954 19', city: 'Екатеринбург' },
+  { id: 5, name: 'Фролова Валентина Олеговна', birthDate: '1981-12-12', age: 42, medicalRecord: '8657-9793-3478-5168', series: '2382', number: '321005', telephonNumber: '8 600 874 20 39', snils: '197 992 9906 68', city: 'Казань' },
+  { id: 6, name: 'Самсонов Изяслав Гордеевич', birthDate: '2003-04-06', age: 21, medicalRecord: '8971-5002-4226-5527', series: '1621', number: '172528', telephonNumber: '+7 762 608 47 88', snils: '690 740 2584 83', city: 'Нижний Новгород' },
+  { id: 7, name: 'Филатов Игнатий Ефстафьевич', birthDate: '1984-04-03', age: 40, medicalRecord: '9888-6907-4111-9780', series: '2268', number: '735378', telephonNumber: '+7 (917) 446-5862', snils: '217 127 7204 71', city: 'Челябинск' },
+  { id: 8, name: 'Капустина Ирина Эдуардовна', birthDate: '1960-12-02', age: 63, medicalRecord: '8702-2741-4939-9845', series: '6936', number: '663216', telephonNumber: '+75180949849', snils: '768 796 2099 15', city: 'Самара' },
+  { id: 9, name: 'Ситникова Екатерина Антоновна', birthDate: '1996-12-01', age: 27, medicalRecord: '3154-8059-7979-9797', series: '2946', number: '139455', telephonNumber: '8 (374) 930-0870', snils: '742 451 2378 59', city: 'Омск' },
+  { id: 10, name: 'Михеева Рада Вениаминовна', birthDate: '1998-07-20', age: 26, medicalRecord: '4359-3887-7695-6931', series: '1938', number: '812089', telephonNumber: '+7 174 618 07 22', snils: '704 567 1161 11', city: 'Ростов-на-Дону' },
+];

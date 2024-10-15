@@ -1,23 +1,23 @@
 import { useParams, Link } from 'react-router-dom';
 
 const CitizenCard = ({ citizens }) => {
-  const { id } = useParams(); // Получаем id из URL
+  const { id } = useParams(); 
   const citizen = citizens.find((citizen) => citizen.id === parseInt(id));
 
   if (!citizen) return <p>Данные не найдены</p>;
 
   return (
-    <div className="p-4 border">
+    <div className="p-4 min-h-screen">
       <Link
         to="/citizens"
-        className="mb-4 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="mb-4 inline-block px-4 py-2 bg-[#245851e4] text-white rounded hover:bg-[#3c7f769c] duration-300"
       >
         Назад к картотеке
       </Link>
-      <h2 className="text-lg font-bold mb-4">{citizen.name}</h2>
-      <table className="min-w-full bg-gray border">
-        <tbody>
-          <tr>
+      <h2 className="text-3xl font-bold mb-4">{citizen.name}</h2>
+      <table className="flex bg-[#3f9d915a] border">
+        <tbody className='w-full'>
+          <tr className='flex justify-between'>
             <td className="py-2 px-4 font-bold">Дата рождения:</td>
             <td className="py-2 px-4">{citizen.birthDate}</td>
           </tr>
@@ -25,7 +25,6 @@ const CitizenCard = ({ citizens }) => {
             <td className="py-2 px-4 font-bold">Статус:</td>
             <td className="py-2 px-4">{citizen.status}</td>
           </tr>
-          {/* Другие данные */}
         </tbody>
       </table>
     </div>
