@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 
 const CitizenCard = ({ citizens }) => {
-  const { id } = useParams(); 
+  const { id } = useParams();
   const citizen = citizens.find((citizen) => citizen.id === parseInt(id));
 
   if (!citizen) return <p>Данные не найдены</p>;
@@ -18,12 +18,36 @@ const CitizenCard = ({ citizens }) => {
       <table className="flex bg-[#3f9d915a] border">
         <tbody className='w-full'>
           <tr className='flex justify-between'>
-            <td className="py-2 px-4 font-bold">Дата рождения:</td>
-            <td className="py-2 px-4">{citizen.birthDate}</td>
+            <td className="py-4 px-4 font-bold">Дата рождения:</td>
+            <td className="py-4 px-4">{citizen.birthDate}</td>
           </tr>
-          <tr>
-            <td className="py-2 px-4 font-bold">Статус:</td>
-            <td className="py-2 px-4">{citizen.status}</td>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Возраст:</td>
+            <td className="py-4 px-4">{citizen.age}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Медицинская карта:</td>
+            <td className="py-4 px-4">{citizen.medicalRecord}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Серия:</td>
+            <td className="py-4 px-4">{citizen.series}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Номер:</td>
+            <td className="py-4 px-4">{citizen.number}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Телефон:</td>
+            <td className="py-4 px-4">{citizen.telephonNumber}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">СНИЛС:</td>
+            <td className="py-4 px-4">{citizen.snils}</td>
+          </tr>
+          <tr className='flex justify-between'>
+            <td className="py-4 px-4 font-bold">Город:</td>
+            <td className="py-4 px-4">{citizen.city}</td>
           </tr>
         </tbody>
       </table>

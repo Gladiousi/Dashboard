@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 const CitizensTable = ({ citizens }) => {
   const [search, setSearch] = useState("");
-  const [sortOrderName, setSortOrderName] = useState("asc"); // Состояние для сортировки по имени (ФИО)
-  const [sortOrderDate, setSortOrderDate] = useState(null); // Состояние для сортировки по дате
+  const [sortOrderName, setSortOrderName] = useState("asc"); 
+  const [sortOrderDate, setSortOrderDate] = useState(null); 
   const navigate = useNavigate();
 
   const handleRowClick = (id) => {
@@ -69,13 +69,13 @@ const CitizensTable = ({ citizens }) => {
 
       <input
         type="text"
-        placeholder="Поиск по имени"
+        placeholder="Поиск по ФИО"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="p-2 mb-4 bg-white text-black"
       />
-      <table className="min-w-full bg-[#3f9d915a] border">
-        <thead>
+      <table className="min-w-full bg-[#3f9d919f] border">
+        <thead className="bg-[#3280759f]">
           <tr>
             <th
               className="text-left py-4 px-4 cursor-pointer"
