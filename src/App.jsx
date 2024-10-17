@@ -12,7 +12,7 @@ const App = () => {
       <Navbar />
       <div className="mx-auto mt-4">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard citizens={citizensData}/>} />
           <Route
             path="/citizens"
             element={<CitizensTable citizens={citizensData} />}

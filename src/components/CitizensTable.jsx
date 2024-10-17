@@ -65,14 +65,14 @@ const CitizensTable = ({ citizens }) => {
   };
 
   return (
-    <div className="p-4 min-h-screen z-0">
+    <div className="p-4 mb-4 min-h-screen z-0">
 
       <input
         type="text"
         placeholder="Поиск по ФИО"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="p-2 mb-4 bg-white text-black"
+        className="p-2 mb-4 bg-white text-black w-[40%]"
       />
       <table className="min-w-full bg-[#3f9d919f] border">
         <thead className="bg-[#3280759f]">
